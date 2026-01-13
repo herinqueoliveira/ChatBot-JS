@@ -1,2 +1,2 @@
 # ChatBot-JS
-Teste repositorio versionado github desktop
+Teste repositorio versionado com Github Desktop
