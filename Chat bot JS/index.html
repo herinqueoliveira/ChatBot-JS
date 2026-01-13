@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Chatbot Simples</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app" role="application" aria-label="Chatbot de Exemplo">
+    <header>
+      <div class="avatar" aria-hidden="true">CB</div>
+      <div>
+        <div class="title">Chatbot Demo</div>
+        <div class="status" id="botStatus" aria-live="polite">online</div>
+      </div>
+    </header>
+
+    <main id="chat" class="chat" aria-live="polite" aria-atomic="false"></main>
+
+    <div class="composer">
+      <form id="form" autocomplete="off" novalidate>
+        <label class="sr-only" for="input">Mensagem</label>
+        <input id="input" class="input" name="input" placeholder="Digite sua mensagem..." />
+        <button id="send" class="button" type="submit" title="Enviar (Enter)">Enviar</button>
+      </form>
+      <div class="toolbar">
+        <button class="chip" data-suggest="ajuda">ajuda</button>
+        <button class="chip" data-suggest="horário">horário</button>
+        <button class="chip" data-suggest="contato">contato</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
